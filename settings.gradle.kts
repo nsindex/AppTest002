@@ -4,6 +4,10 @@ pluginManagement {
         mavenCentral()
         gradlePluginPortal()
     }
+    plugins {
+        id("org.jetbrains.kotlin.android") version "1.9.10"
+        id("com.google.devtools.ksp") version "1.9.10-1.0.13"
+    }
 }
 
 dependencyResolutionManagement {
@@ -11,11 +15,6 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-    }
-    versionCatalogs {
-        create("libs") {
-            from(files("./gradle/libs.versions.toml"))  // 'from' はここで1度だけ呼び出す
-        }
     }
 }
 
