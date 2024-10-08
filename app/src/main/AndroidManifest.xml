@@ -27,7 +27,7 @@
         <service
             android:name=".MyForegroundService"
             android:exported="false"
-            android:foregroundServiceType="dataSync|mediaProcessing" />
+            android:foregroundServiceType="dataSync" />
 
     </application>
 

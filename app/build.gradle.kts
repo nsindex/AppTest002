@@ -6,11 +6,6 @@ plugins {
 }
 
 android {
-    // 既存の設定
-}
-
-
-android {
     namespace = "com.example.apptest002"
     compileSdk = 34
 
